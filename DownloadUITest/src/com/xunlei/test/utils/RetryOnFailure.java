@@ -96,7 +96,7 @@ public class RetryOnFailure implements TestRule {
 				.getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(screenShotFile, new File(
-					"/Users/Brian/Documents/appium-ScreenShot/"
+					"D:/appium-ScreenShot/"
 							+ getCurrentDateTime() + ".jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();

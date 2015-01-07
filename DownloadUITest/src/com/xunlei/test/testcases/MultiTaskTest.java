@@ -92,7 +92,7 @@ public class MultiTaskTest extends BaseCase {
 		logger.info("下载任务1名称: " + taskName1);
 		String statusText1 = DownloadList.getDownloadSpeed(downloadItem1);
 		logger.info("任务1当前下载状态: " + statusText1);
-		assertEquals(statusText1, "连接中");
+		assertTrue(statusText1.indexOf("B/s") > -1);
 		// 获取第二个下载任务并验证状态
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
 				2);

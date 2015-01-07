@@ -22,7 +22,7 @@ DownloadUITest
 使用说明：<br>
 1   本机配置好开发环境（jdk、android-sdk、环境变量、eclipse等）<br>
 2   从github下载项目代码并导入eclipse，将lib文件夹中的jar包添加至项目依赖，并添加junit4依赖<br>
-3   从http://appium.io/ 官网下载最新的appium客户端（appium.exe/.dmg）<br>
+3   从http://pan.baidu.com/s/1eQeUPFk （windows）/ http://pan.baidu.com/s/1dDlI2S5 （mac） 下载并解压appium客户端<br>
 4   插上已刷好测试环境的手机，运行appium客户端，并点击右上角的Launch按钮，看到界面上开始有日志刷新即表示appium启动成功<br>
 5   编译运行src/com.xunlei.test.testcase包内的Junit测试用例即可<br>
 

@@ -45,7 +45,7 @@ public class DownloadList {
 	 */
 	public static String getDownloadSpeed(WebElement element) {
 		WebElement dateStatus = element.findElement(By
-				.id("com.android.providers.downloads.ui:id/date_status_info"));
+				.id("com.android.providers.downloads.ui:id/date_status_info_new"));
 		return dateStatus.getText();
 	}
 	

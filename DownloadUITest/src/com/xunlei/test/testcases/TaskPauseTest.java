@@ -53,7 +53,7 @@ public class TaskPauseTest extends BaseCase {
 		pauseBtn.click();
 		logger.info("暂停按钮已点击");
 		sleep(1);
-		String pauseStatusText = DownloadList.getDownloadSpeed(downloadItem);
+		String pauseStatusText = DownloadList.getPauseStatus(downloadItem);
 		logger.info("当前下载状态: " + pauseStatusText);
 		assertEquals(pauseStatusText, "已暂停");
 		sleep(1);
@@ -100,10 +100,10 @@ public class TaskPauseTest extends BaseCase {
 		logger.info("全部暂停按钮已点击");
 		sleep(1);
 		// 验证任务状态
-		String pauseStatusText1 = DownloadList.getDownloadSpeed(downloadItem1);
+		String pauseStatusText1 = DownloadList.getPauseStatus(downloadItem1);
 		logger.info("任务1当前下载状态: " + pauseStatusText1);
 		assertEquals(pauseStatusText1, "已暂停");
-		String pauseStatusText2 = DownloadList.getDownloadSpeed(downloadItem2);
+		String pauseStatusText2 = DownloadList.getPauseStatus(downloadItem2);
 		logger.info("任务2当前下载状态: " + pauseStatusText2);
 		assertEquals(pauseStatusText2, "已暂停");
 		sleep(1);
@@ -148,7 +148,7 @@ public class TaskPauseTest extends BaseCase {
 			logger.info("暂停按钮已点击");
 			sleep(1);
 			String pauseStatusText = DownloadList
-					.getDownloadSpeed(downloadItem);
+					.getPauseStatus(downloadItem);
 			logger.info("当前下载状态: " + pauseStatusText);
 			assertEquals(pauseStatusText, "已暂停");
 			sleep(1);

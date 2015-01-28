@@ -38,7 +38,7 @@ public class DownloadList {
 	}
 
 	/**
-	 * 获取下载任务的速度状态
+	 * 获取下载任务的速度
 	 * 
 	 * @param element
 	 * @return
@@ -50,7 +50,20 @@ public class DownloadList {
 	}
 	
 	/**
-	 * 获取下载任务的速度状态
+	 * 获取下载任务的暂停状态
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public static String getPauseStatus(WebElement element) {
+		WebElement pauseStatus = element.findElement(By
+				.id("com.android.providers.downloads.ui:id/date_status_info"));
+		return pauseStatus.getText();
+	}
+	
+	
+	/**
+	 * 获取下载任务的名称
 	 * 
 	 * @param element
 	 * @return

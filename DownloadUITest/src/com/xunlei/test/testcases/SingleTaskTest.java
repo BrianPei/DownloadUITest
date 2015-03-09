@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
@@ -51,7 +52,7 @@ public class SingleTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
@@ -73,7 +74,7 @@ public class SingleTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
@@ -95,7 +96,7 @@ public class SingleTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
@@ -117,7 +118,7 @@ public class SingleTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
@@ -129,7 +130,7 @@ public class SingleTaskTest extends BaseCase {
 	/*
 	 * 从浏览器下载单个任务
 	 */
-	@Test
+	@Ignore
 	public void browserSingleDownload() throws MalformedURLException {
 		// 从浏览器百度网盘下载一个文件
 		BrowserDownload.downloadFromBaiduPan();
@@ -139,7 +140,7 @@ public class SingleTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);

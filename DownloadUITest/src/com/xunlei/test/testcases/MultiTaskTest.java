@@ -50,7 +50,7 @@ public class MultiTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务并验证状态
 		WebElement downloadItem1 = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		String taskName1 = DownloadList.getTaskName(downloadItem1);
 		logger.info("下载任务1名称: " + taskName1);
 		String statusText1 = DownloadList.getDownloadSpeed(downloadItem1);
@@ -58,7 +58,7 @@ public class MultiTaskTest extends BaseCase {
 		assertEquals(statusText1, "连接中");
 		// 获取第二个下载任务并验证状态
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
-				2);
+				3);
 		String taskName2 = DownloadList.getTaskName(downloadItem2);
 		logger.info("下载任务2名称: " + taskName2);
 		String statusText2 = DownloadList.getDownloadSpeed(downloadItem2);
@@ -66,7 +66,7 @@ public class MultiTaskTest extends BaseCase {
 		assertTrue(statusText2.indexOf("B/s") > -1);
 		// 获取第三个下载任务并验证状态
 		WebElement downloadItem3 = DownloadList.getDownloadTask(driverDownload,
-				6);
+				8);
 		String taskName3 = DownloadList.getTaskName(downloadItem3);
 		logger.info("下载任务3名称: " + taskName3);
 		String statusText3 = DownloadList.getDownloadSpeed(downloadItem3);
@@ -87,7 +87,7 @@ public class MultiTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务并验证状态
 		WebElement downloadItem1 = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		String taskName1 = DownloadList.getTaskName(downloadItem1);
 		logger.info("下载任务1名称: " + taskName1);
 		String statusText1 = DownloadList.getDownloadSpeed(downloadItem1);
@@ -95,7 +95,7 @@ public class MultiTaskTest extends BaseCase {
 		assertTrue(statusText1.indexOf("B/s") > -1);
 		// 获取第二个下载任务并验证状态
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
-				2);
+				3);
 		String taskName2 = DownloadList.getTaskName(downloadItem2);
 		logger.info("下载任务2名称: " + taskName2);
 		String statusText2 = DownloadList.getDownloadSpeed(downloadItem2);
@@ -116,7 +116,7 @@ public class MultiTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务并验证状态
 		WebElement downloadItem1 = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		String taskName1 = DownloadList.getTaskName(downloadItem1);
 		logger.info("下载任务1名称: " + taskName1);
 		String statusText1 = DownloadList.getDownloadSpeed(downloadItem1);
@@ -124,7 +124,7 @@ public class MultiTaskTest extends BaseCase {
 		assertEquals(statusText1, "连接中");
 		// 获取第二个下载任务并验证状态
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
-				2);
+				3);
 		String taskName2 = DownloadList.getTaskName(downloadItem2);
 		logger.info("下载任务2名称: " + taskName2);
 		String statusText2 = DownloadList.getDownloadSpeed(downloadItem2);
@@ -132,7 +132,7 @@ public class MultiTaskTest extends BaseCase {
 		assertTrue(statusText2.indexOf("B/s") > -1);
 		// 获取第三个下载任务并验证状态
 		WebElement downloadItem3 = DownloadList.getDownloadTask(driverDownload,
-				6);
+				8);
 		String taskName3 = DownloadList.getTaskName(downloadItem3);
 		logger.info("下载任务3名称: " + taskName3);
 		String statusText3 = DownloadList.getDownloadSpeed(downloadItem3);
@@ -153,7 +153,7 @@ public class MultiTaskTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务并验证状态
 		WebElement downloadItem1 = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		String taskName1 = DownloadList.getTaskName(downloadItem1);
 		logger.info("下载任务1名称: " + taskName1);
 		String statusText1 = DownloadList.getDownloadSpeed(downloadItem1);
@@ -161,7 +161,7 @@ public class MultiTaskTest extends BaseCase {
 		assertEquals(statusText1, "连接中");
 		// 获取第二个下载任务并验证状态
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
-				2);
+				3);
 		String taskName2 = DownloadList.getTaskName(downloadItem2);
 		logger.info("下载任务2名称: " + taskName2);
 		String statusText2 = DownloadList.getDownloadSpeed(downloadItem2);
@@ -169,7 +169,7 @@ public class MultiTaskTest extends BaseCase {
 		assertTrue(statusText2.indexOf("B/s") > -1);
 		// 获取第三个下载任务并验证状态
 		WebElement downloadItem3 = DownloadList.getDownloadTask(driverDownload,
-				6);
+				8);
 		String taskName3 = DownloadList.getTaskName(downloadItem3);
 		logger.info("下载任务3名称: " + taskName3);
 		String statusText3 = DownloadList.getDownloadSpeed(downloadItem3);

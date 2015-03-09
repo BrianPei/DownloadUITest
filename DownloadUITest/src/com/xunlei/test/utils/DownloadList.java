@@ -81,7 +81,7 @@ public class DownloadList {
 	 * @param element
 	 */
 	public static void clearDownloadList(AppiumDriver driver) {
-		WebElement element = getDownloadTask(driver, 0);
+		WebElement element = getDownloadTask(driver, 1);
 		TouchAction touch = new TouchAction(driver);
 		touch.longPress(element).perform();
 		WebElement allSelect = driver.findElementById("android:id/button2");

@@ -40,7 +40,7 @@ public class TaskPauseTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		// 验证下载任务状态
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
@@ -79,9 +79,9 @@ public class TaskPauseTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取两个下载任务并验证状态
 		WebElement downloadItem1 = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		WebElement downloadItem2 = DownloadList.getDownloadTask(driverDownload,
-				2);
+				3);
 		String taskName1 = DownloadList.getTaskName(downloadItem1);
 		logger.info("下载任务1名称: " + taskName1);
 		String startStatusText1 = DownloadList.getDownloadSpeed(downloadItem1);
@@ -135,7 +135,7 @@ public class TaskPauseTest extends BaseCase {
 		retryOnFailure.set(driverDownload);
 		// 获取第一个下载任务并验证状态
 		WebElement downloadItem = DownloadList.getDownloadTask(driverDownload,
-				0);
+				1);
 		String taskName = DownloadList.getTaskName(downloadItem);
 		logger.info("下载任务名称: " + taskName);
 		String startStatusText = DownloadList.getDownloadSpeed(downloadItem);
